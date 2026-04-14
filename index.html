@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting minutes for Team 7 Pomodoro Timer brainstorm session">
+    <meta name="author" content="Team 7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 7 — Pomodoro Timer First Brainstorm</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Team 7 — Pomodoro Timer First Brainstorm</h1>
+        <nav>
+            <ul>
+                <li><a href="#meeting-details">Meeting Details</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#old-business">Old Business</a></li>
+                <li><a href="#new-business">New Business</a></li>
+                <li><a href="#qa">Miscellaneous Q&amp;A</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#feedback">Feedback Form</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section id="meeting-details">
+            <h2>Meeting Details</h2>
+            <p><strong>Date:</strong> <span>April 10, 2025</span></p>
+            <p><strong>Time:</strong> 4:00 PM – 5:30 PM</p>
+            <p><strong>Location:</strong> CSE Building Room 2154, UC San Diego</p>
+            <p><strong>Meeting Type:</strong> First Brainstorm Session</p>
+        </section>
+
+        <hr>
+
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <h3>Members Present</h3>
+            <ul>
+                <li><b>Priya Sharma</b> — Team Lead</li>
+                <li><b>Marcus Chen</b> — Frontend Developer</li>
+                <li><b>Sofia Reyes</b> — Backend Developer</li>
+                <li><b>James Okafor</b> — Designer</li>
+                <li><b>Aiko Tanaka</b> — QA and Testing</li>
+            </ul>
+            <h3>Members Absent</h3>
+            <ul>
+                <li><b>Liam Fitzgerald</b> — DevOps Engineer <br>
+                <em>Excused: attending a family emergency out of state.</em></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Review project requirements</li>
+                <li>Discuss attendance and team roles</li>
+                <li>Address old business from previous class meetings</li>
+                <li>Brainstorm core features for the Pomodoro Timer</li>
+                <li>Identify stretch goals</li>
+                <li>Decide on the tech stack</li>
+                <li>Assign action items</li>
+                <li>Open floor for miscellaneous questions</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="old-business">
+            <h2>Old Business</h2>
+            <p>Priya reminded the team that the <strong>team contract</strong> was submitted last week. All members have signed it and agreed to the communication norms. The team will continue using <i>Discord</i> as the primary communication channel and <i>GitHub</i> for version control.</p>
+            <p>Marcus confirmed that the shared GitHub repository has been created and all members have been added as collaborators.</p>
+        </section>
+
+        <hr>
+
+        <section id="new-business">
+            <h2>New Business</h2>
+
+            <div>
+                <h3>Core Features</h3>
+                <p>The team agreed on the following <strong>core features</strong> for the Pomodoro Timer application:</p>
+                <ul>
+                    <li>A configurable timer with default 25-minute work and 5-minute break intervals</li>
+                    <li>Start, pause, and reset controls</li>
+                    <li>Visual progress indicator showing time remaining</li>
+                    <li>Audio notification when a session ends</li>
+                    <li>Session counter to track completed pomodoros</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Stretch Goals</h3>
+                <p>The following stretch goals were discussed. Click each item below for more details:</p>
+
+                <details>
+                    <summary>Task Labeling and History Log</summary>
+                    <p>Sofia proposed allowing users to <em>label each pomodoro session</em> with a task name. A history log would display past sessions with timestamps and task labels. This could be stored using <b>localStorage</b> so data persists between browser sessions. The team agreed this was feasible if time permits.</p>
+                </details>
+
+                <details>
+                    <summary>Statistics Dashboard</summary>
+                    <p>James suggested a <em>statistics dashboard</em> showing daily, weekly, and monthly productivity summaries with simple bar charts. Aiko noted that this depends on the history log feature being implemented first. The team flagged this as a <strong>lower-priority</strong> stretch goal.</p>
+                </details>
+
+                <details>
+                    <summary>Customizable Themes</summary>
+                    <p>Marcus brought up the idea of letting users pick from several <em>color themes</em>. This would involve toggling between predefined CSS classes. The team liked this idea for polishing the final product.</p>
+                </details>
+            </div>
+
+            <div>
+                <h3>Tech Stack</h3>
+                <p>After discussion, the team decided on the following technologies:</p>
+                <ul>
+                    <li><strong>HTML5</strong> and <strong>CSS3</strong> for structure and styling</li>
+                    <li><strong>Vanilla JavaScript</strong> for timer logic and DOM manipulation</li>
+                    <li><strong>GitHub Pages</strong> for deployment</li>
+                    <li><strong>Jest</strong> for unit testing</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Action Items</h3>
+                <ol>
+                    <li><b>Priya</b> — Draft the project roadmap and milestones by April 14</li>
+                    <li><b>Marcus</b> — Create wireframes for the main timer interface by April 14</li>
+                    <li><b>Sofia</b> — Research localStorage API and draft data model by April 16</li>
+                    <li><b>James</b> — Design mockups for desktop and mobile layouts by April 16</li>
+                    <li><b>Aiko</b> — Set up the Jest testing framework in the repository by April 14</li>
+                    <li><b>Liam</b> — Configure GitHub Actions CI pipeline when available by April 18</li>
+                </ol>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="qa">
+            <h2>Miscellaneous Q&amp;A</h2>
+            <p><strong>Q:</strong> <i>Should we support mobile browsers?</i><br>
+            <strong>A:</strong> Yes. Marcus will ensure the layout is responsive from the start.</p>
+            <p><strong>Q:</strong> <i>Do we need a backend server?</i><br>
+            <strong>A:</strong> No. The app will be entirely client-side using localStorage for persistence.</p>
+            <p><strong>Q:</strong> <i>When is the next meeting?</i><br>
+            <strong>A:</strong> Thursday, April 17, 2025 at 4:00 PM in the same room.</p>
+        </section>
+
+        <hr>
+
+        <section id="media">
+            <h2>Media</h2>
+            <h3>Whiteboard Photo</h3>
+            <p>Photo of the brainstorm whiteboard from today's meeting:</p>
+            <img src="whiteboard.jpg" alt="Whiteboard showing brainstorm notes with feature ideas, tech stack decisions, and a rough sketch of the Pomodoro Timer interface layout">
+
+            <h3>Meeting Audio Recording</h3>
+            <p>Audio recording of the full meeting:</p>
+            <audio controls>
+                <source src="meeting_audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Meeting Video Recording</h3>
+            <p>Video recording of the meeting:</p>
+            <video controls width="640">
+                <source src="meeting_video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <hr>
+
+        <section id="feedback">
+            <h2>Feedback Form</h2>
+            <p>Please share your feedback on this meeting:</p>
+            <form>
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <p>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" list="team-members">
+                        <datalist id="team-members">
+                            <option value="Priya Sharma">
+                            <option value="Marcus Chen">
+                            <option value="Sofia Reyes">
+                            <option value="James Okafor">
+                            <option value="Aiko Tanaka">
+                            <option value="Liam Fitzgerald">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="meeting-date">Meeting Date:</label><br>
+                        <input type="date" id="meeting-date" name="meeting-date" value="2025-04-10">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Meeting Feedback</legend>
+
+                    <p>How would you rate the meeting overall?</p>
+                    <p>
+                        <input type="radio" id="rating-excellent" name="rating" value="excellent">
+                        <label for="rating-excellent">Excellent</label><br>
+                        <input type="radio" id="rating-good" name="rating" value="good">
+                        <label for="rating-good">Good</label><br>
+                        <input type="radio" id="rating-fair" name="rating" value="fair">
+                        <label for="rating-fair">Fair</label><br>
+                        <input type="radio" id="rating-poor" name="rating" value="poor">
+                        <label for="rating-poor">Poor</label>
+                    </p>
+
+                    <p>Which topics were useful? (select all that apply)</p>
+                    <p>
+                        <input type="checkbox" id="topic-features" name="topics" value="features">
+                        <label for="topic-features">Core Features Discussion</label><br>
+                        <input type="checkbox" id="topic-stretch" name="topics" value="stretch">
+                        <label for="topic-stretch">Stretch Goals</label><br>
+                        <input type="checkbox" id="topic-tech" name="topics" value="tech">
+                        <label for="topic-tech">Tech Stack Decision</label><br>
+                        <input type="checkbox" id="topic-actions" name="topics" value="actions">
+                        <label for="topic-actions">Action Items</label>
+                    </p>
+
+                    <p>
+                        <label for="focus-area">What should the next meeting focus on?</label><br>
+                        <select id="focus-area" name="focus-area">
+                            <option value="">-- Select an option --</option>
+                            <option value="design">UI/UX Design Review</option>
+                            <option value="coding">Start Coding Sprint</option>
+                            <option value="testing">Testing Strategy</option>
+                            <option value="timeline">Timeline and Milestones</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comments">Additional Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Feedback</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Meeting minutes taken by <strong>Aiko Tanaka</strong>, QA and Testing Lead.</p>
+        <p><em>Team 7 — CSE 110, Spring 2025, UC San Diego</em></p>
+    </footer>
+</body>
+</html>
